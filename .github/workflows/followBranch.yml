@@ -15,6 +15,10 @@ jobs:
         run: |
           git config --local user.email "hirakue388@hoge.com"
           git config --local user.name "hirakue388"
+      - name: git-fetch
+        run: git fetch
+      - name: check-branch
+        run: git branch -a
       - name: checkout-follow-branch
         run: git checkout follow_1
       - name: pull-branch
