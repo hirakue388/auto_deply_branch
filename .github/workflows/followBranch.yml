@@ -24,7 +24,7 @@ jobs:
       - name: pull-branch
         run: git pull origin follow_1
       - name: merge master
-        run: git merge master
+        run: git merge master --allow-unrelated-histories
       - name: push follow_1 branch
         run: git push origin follow_1
         
